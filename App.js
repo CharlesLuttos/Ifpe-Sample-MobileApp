@@ -8,12 +8,13 @@ import homeScreen from './screens/home';
 import cadastroScreen from './screens/cadastro';
 import cadastroContatoScreen from './screens/cadastroContato'
 import alteraContatoScreen from './screens/alteraContato'
-
+import { initializeApp } from "firebase/app";
 
 const Stack = createNativeStackNavigator();
 
 class App extends React.Component {
   render() {
+    // const app = initializeApp(firebaseConfig);
     return (
       <NativeBaseProvider>
         <NavigationContainer>
